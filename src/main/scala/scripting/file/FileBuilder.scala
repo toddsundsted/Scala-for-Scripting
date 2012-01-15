@@ -5,6 +5,8 @@ import java.io.File
 class FileBuilder(val file: File) {
 
   def f = this
+
+  override def toString = file.toString
 }
 
 object Implicits {
