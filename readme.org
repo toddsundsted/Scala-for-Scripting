@@ -2,11 +2,10 @@
 ** Shortcuts for operations on files
 #+BEGIN_SRC scala
 import scripting.file._
-import scripting.file.Implicits._
 
 val file = "test.txt".f
 file.exists                   // false
-file.getAbsolutePath          // "/projects/scripting/test.txt"
+file.getAbsolutePath          // /projects/scripting/test.txt
 
 import scala.sys.process._
 
