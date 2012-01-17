@@ -6,9 +6,9 @@ class FileBuilder(val file: File) {
 
   def f = this
 
-  def << = new java.io.FileOutputStream(this.file)
+  def << = new java.io.FileOutputStream(file)
 
-  def >> = new java.io.FileInputStream(this.file)
+  def >> = new java.io.FileInputStream(file)
 
   override def toString = file.toString
 }
